@@ -1,10 +1,11 @@
 import './App.css'
+import Routing from './Routing'
 
 function App() {
 
   return (
     <>
-     <h2 className='text-amber-700 font-bold text-2xl'>Hello everyone let's get started!</h2>
+      <Routing />
     </>
   )
 }
