@@ -2,6 +2,16 @@
 
 - Create react app with Vite
 - configured TailwindCSS
+- Header
+- Routing of App
+- Login and Signup form
+- Form validation
+- useRef hook
+- Firebase setup
+- Deploying app to production Link: https://netflixreact-3d9b2.web.app/
+- Create signUp and SignIn user account
+- Implement Redux store
+
 
 
 # Features
