@@ -14,9 +14,8 @@ function Routing() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe =  onAuthStateChanged(auth, (user) => {
       if (user) {
-        // console.log("routing level: ", user)
         const { uid, email, displayName, photoURL } = user;
         console.log("user check value ", user)
         dispatch(addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }))
@@ -24,8 +23,11 @@ function Routing() {
       } else {
         // User is signed out
         dispatch(removeUser());
+        navigate("/");
       }
     });
+    
+    return () => unsubscribe();
   }, [])
 
   return (

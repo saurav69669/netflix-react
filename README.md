@@ -11,6 +11,11 @@
 - Deploying app to production Link: https://netflixreact-3d9b2.web.app/
 - Create signUp and SignIn user account
 - Implement Redux store
+- Implemented Sign Out
+- Register TMDB API and create an app and get access token
+- Get Data from TMDB API
+- custom hook for now playing movies
+- Fetch Data for trailer video
 
 
 
