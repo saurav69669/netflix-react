@@ -16,7 +16,7 @@ const useNowPlayingVideo = ( movieId ) => {
     
     const filteredTrailerVideo = res.results.filter((video) => video.type === "Trailer" && video.name === 'Official Trailer');
     const trailer = filteredTrailerVideo.length ? filteredTrailerVideo[0] : res.results[0];
-    console.log("trailer", trailer);
+    // console.log("trailer", trailer);
     
     dispatch(addTrailerVideo(trailer));
   };
